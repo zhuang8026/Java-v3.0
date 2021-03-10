@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    1. 處理異常的方法
+        -> try-catch and try-catch-finally
+        EX: try {
+                /* 一些會拋出異常的方法 */
+            } catch (Exception e) {
+                /* 處理該異常的代碼塊 */
+            }
+    2. 重點：
+        拋出例外錯誤必須要 子類 到 父類
+        -> InputMismatchException(子類) / ArithmeticException(子類) -> Exception(父類)
+        EX: try { }
+            catch (InputMismatchException e) { .... } /* 子 */
+            catch (ArithmeticException e) { .... } /* 子 */
+            catch (Exception e) { .... } /* 父 */
+
+    3. finally 是什麼？
+        -> 最後 catch 完畢之後要執行的代碼
+    4.
+    5.
+    6.
+
+</body>
+</html>
