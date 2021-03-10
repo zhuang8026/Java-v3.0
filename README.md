@@ -2,8 +2,8 @@
 ### 學習java的第三步, 理解萬歲，多一分更好
 - 1-01
     - 1-01 Java 異常介紹
-    - 1-02 
-    - 1-03 
+    - 1-02 Java中使用 try..catch..finally 實現異常處理
+      - 1-03 Java try..catch..finally 練習
     - 1-04
 - 2-01
     - 2-01
