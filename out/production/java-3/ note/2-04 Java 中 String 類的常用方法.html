@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    1. "==" 和 equals() 有什么区别呢？
+        -> "==" 判断两个字符串在 内存 中首地址是否相同，即判断是否是同一个 字符串 对象
+        -> equals(): 比较存储在两个字符串对象中的 内容 是否一致
+    2. String and char
+        -> 'c' type char
+        -> "c" type String
+        -> 注意：'' != "", String 是一個物件，由char組合而成
+    3.  char 是一個字元
+            string 是 char 的組合，string 的內部結構是由一個array組合而成
+            -> 例子一：
+            String s = "qazwsxedcrfv";
+                ->  if (s.charAt(i) == 'c') {...} /* ok */
+                ->  if (s.charAt(i) == "c") {...} /* error */
+                    -> 因為 char != string
+                -> if (s.substring(i, s.length).equals("c")) {...} /* true */
+            -> 例子二：
+                -> String a = "a"; if(a == "a"){...} /* ok 指向的位置都是同一個，並且全新*/
+                -> String a = new String("a"); if(a == "a"){...} /* false 因為記憶體位置是全新的*/
+    4. String & StringBuilder & StringBuffer
+        -> 在需要频繁对字符串进行修改操作时使用 StringBuilder 的效率比 String 要高
+        -> StringBuilder > String > StringBuffer (效率)
+</body>
+</html>
