@@ -3,7 +3,7 @@ package imooc_class;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Imooc_1_07s_homework {
+public class Imooc_1_07s_homework_throws_Exception {
 
     public static int inputCheck(){
         Scanner scan = new Scanner(System.in);
