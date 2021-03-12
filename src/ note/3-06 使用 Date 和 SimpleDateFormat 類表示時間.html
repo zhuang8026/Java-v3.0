@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    Date類 -> java.util 包中的 Date 类
+           -> 使用 Date 类的默认无参构造方法创建出的对象就代表当前时间
+    SimpleDateFormat類
+            -> 可以解決 Date 無法正常顯示的問題
+            -> format() 方法将日期转换为指定格式的文本
+            -> parse()  方法将文本转换为日期
+            -> SimpleDateFormat sdf3 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            -> String i = sdf3.format(new Date()); /* 轉正常格式 2021-03-12 11:33:10 */
+            -> Date d = sdf3.parse(i); /* 轉世界格式 Sun Jun 01 21:05:36 CST 2014 */
+</body>
+</html>
