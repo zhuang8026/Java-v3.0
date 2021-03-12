@@ -19,6 +19,6 @@
     - 3-04 基本類型 和 字符串 之間的轉換
     - 3-06 Date 和 SimpleDateFormat 類來顯示時間
     - 3-07 Calendar 和 LocalDateTime 類應用 
-
+    - 3-08 Math 引用
 
 - 入門基礎知識 學習結束，請轉至 "SpringBoot-v1.0"
