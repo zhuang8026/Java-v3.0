@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    Calendar 是抽象類別
+        -> 定義類別時，可以僅宣告方法名稱不用實作（new）,這叫做 "抽象方法"
+        -> 而使用抽象方法的類 ,稱之為 "抽象類別"
+
+    1. Date 类最主要的作用就是获得当前时间,不算是最好用的時間類，所以推出了一個 Calendar 類
+    2. EX:
+        -> Calendar cal = Calendar.getInstance();  // 創建時間物件，但此時還是物件，所以沒辦法正常顯示，必須呼叫方法
+        -> Date date = cal.getTime();              // 使用getTime()方法並轉成Date對象 => 顯示: Fri Mar 12 11:46:27 CST 2021
+        -> 在用 SimpleDateFormat物件 的format()來解析並顯示 正常時間  // 2021-03-12 11:46:27
+    3.
+        -> LocalDateTime （SA 推薦）
+        -> 更加簡單
+            -> LocalDate Ltime = LocalDate.now();
+</body>
+</html>
