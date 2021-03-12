@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        基本類       包裝類
+    1.  byte        Byte
+        short       Short
+        int         Integer
+        long        Long
+        float       Float
+        double      Double
+        char        Charactor
+        boolean     Boolean
+
+    2. 重點：Integer 包裝類
+        -> 包装类主要提供了两大类方法:
+            -> 1. 将 本类型 和 其他基本类型 进行转换的方法
+            -> 2. 将 字符串 和 本类型 及 包装类 互相转换的方法
+        -> EX：
+            -> Integer num =new Integer("1");
+            -> num.byteValue()          // Integer 轉為 byte 類型
+            -> num.doubleValue()        // 轉為 double 類型
+            -> num.floatValue()         // 轉為 float 類型
+            -> num.intValue()           // 轉為 int 類型 2^31 - 1
+            -> num.longValue()          // 轉為 long 類型 2^63 - 1
+            -> Integer.parseInt("String")   // 將 字符串 轉 int 類型
+            -> num.toString()               // 轉為 字符串 類型
+            -> Integer.valueOf("111111")    // 將 字符串 轉 Integer 類型
+
+</body>
+</html>
