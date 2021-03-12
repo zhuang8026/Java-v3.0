@@ -14,10 +14,11 @@
     - 2-05 Java 中的 StringBuilder 類
     - 2-06 Java 中的 StringBuilder 類的常用方法
 - 3-01
-    - 3-01
-    - 3-02
-    - 3-03
-    - 3-04
+    - 3-01 基本類型 和 包裝類型
+    - 3-02 基本類型 和 包裝類型 之間的轉換
+    - 3-04 基本類型 和 字符串 之間的轉換
+    - 3-06 Date 和 SimpleDateFormat 類來顯示時間
+    - 3-07 Calendar 和 LocalDateTime 類應用 
 
 
 - 入門基礎知識 學習結束，請轉至 "SpringBoot-v1.0"

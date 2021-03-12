@@ -1,6 +1,7 @@
 package imooc_class;
 
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
@@ -35,5 +36,14 @@ public class Imooc_3_07 {
         LocalDateTime time = LocalDateTime.now(); // 取得現在時間
         DateTimeFormatter dt = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"); // 設定格式
         System.out.println(time.format(dt)); // 解析
+
+        LocalDate Ltime = LocalDate.now();
+        DateTimeFormatter ymd = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        System.out.println(Ltime.format(ymd));
+
+        LocalDate Ltime2 = LocalDate.parse("2021-01-02", ymd);
+        System.out.println(Ltime2.getYear());
+        System.out.println(Ltime2.getMonth());
+        System.out.println(Ltime2.getMonthValue());
     }
 }
