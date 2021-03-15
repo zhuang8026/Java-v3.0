@@ -20,4 +20,8 @@ public class Cource {
     public void setName(String courceName) {
         this.name = courceName;
     }
+
+    public String toString(){
+        return id + ":" + name;
+    }
 }
