@@ -1,13 +1,16 @@
 package imooc_class.imooc_4_11_HashSet;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 /* 學生類 */
 public class Student {
     private String id;
     private String name;
-    private Set<Cource> courses = new HashSet<Cource>();
+    private Set<Cource> courses = new HashSet<Cource>(); // 無順序, 資料不可重複，由 HashMap 實作, 陣列及bucket
+    public Set<String> set = new LinkedHashSet<>(); // 有順序, 資料不可重複，由 LinkedHashMap 實作鏈接
+
+    public List<String> list1 = new LinkedList<>(); // 有順序, 資料可重複（鏈接）
+    public List<String> list2 = new ArrayList<>(); // 有順序, 資料可重複（陣列）
 
 //    public Student(String id, String name){
 //        this.id = id;
@@ -39,4 +42,7 @@ public class Student {
         this.courses.add(course);
     }
 
+    public static void main(String[] args) {
+        int i = 100;
+    }
 }

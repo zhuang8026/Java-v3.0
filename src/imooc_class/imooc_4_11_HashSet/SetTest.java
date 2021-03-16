@@ -5,6 +5,7 @@ import java.util.*;
 public class SetTest {
 
     public List<Cource> courcesToSelect = new ArrayList<Cource>();
+    public Set<String> set = new LinkedHashSet<>();
 
     public void ListAdd(){
         Cource cr1 = new Cource();
@@ -28,14 +29,18 @@ public class SetTest {
     }
 
     public void TestForEachForSet(Student student){
-        // for(Cource cr: (Set<Cource>) student.getCources()){
+        // 打印輸出，學生所選的課程
+        System.out.println("一共選擇了" + student.getCources().size() + "門");
+        // for(Cource cr: (Set<Cource>) student.getCources()){ .. }
         for(Cource cr: student.getCources()){
             System.out.println("選擇" + cr.getId() + ":" + cr.getName());
         }
     };
 
     public static void main(String[] args) {
+
         SetTest st = new SetTest();
+        
         st.ListAdd();
         st.ListForEach();
 
@@ -49,13 +54,15 @@ public class SetTest {
         Scanner scanner = new Scanner(System.in);
 
         for (int i =0; i < 3; i ++) {
-            System.out.println("請輸入課程ID");
+            System.out.println("請輸入課程ID：");
             String conrseId = scanner.next();
             for(Cource cre : st.courcesToSelect){
                 if(cre.getId().equals(conrseId)){
-                    student.addCourses(cre);
+                    student.addCourses(cre); // 測試
+                    student.addCourses(cre); // 測試 HashSet 所輸入的內容是不可重複的
+//                    student.addCourses(null); // 可以傳入 null, 不會抱錯
                 }
-            }
+            }                           
         }
 
         st.TestForEachForSet(student);

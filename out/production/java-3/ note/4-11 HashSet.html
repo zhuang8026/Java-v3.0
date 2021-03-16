@@ -10,7 +10,16 @@
         -> HashSet 稱為 哈希集，是Set的一個重要的實現類
 
     2. List 和 Set 差別：
-        -> set 沒有 add 和 set 方法，因為 Set 是無序的，無序就代表沒有順序，
-            自然也就沒有 沒有辦法找到 key 值，指定修改內容。
+        -> Set 是非重複資料的集合 (最後的資料)
+        -> List 內部資料可以重複
+        -> 判斷物件存不存在集合內，Set 的複雜度為 O(1)，List為 O(N)
+
+    3. 補充：
+        -> Set 繼承了 Collection
+            -> Collection 繼承 Iterable
+                -> Iterable 是 interface
+                    -> 所以 Set 是 interface
+        -> HashSet() 是 Set 接口的 實現類
+
 </body>
 </html>
