@@ -20,5 +20,12 @@
     - 3-06 Date 和 SimpleDateFormat 類來顯示時間
     - 3-07 Calendar 和 LocalDateTime 類應用 
     - 3-08 Math 引用
+- 4-01
+  - 4-01 什麼是集合？(Collection & Map)
+  - 4-02 Collection 是 List 的父親
+  - 4-03 練習
+    - 04~08 List的方法 add、set、for、remove(CRUD)
+  - 4-09 學生選課 --- 應用泛型管理課程(一)
+  - 4-10 學生選課 --- 應用泛型管理課程(二)
 
 - 入門基礎知識 學習結束，請轉至 "SpringBoot-v1.0"

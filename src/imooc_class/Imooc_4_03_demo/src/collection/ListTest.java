@@ -100,6 +100,19 @@ public class ListTest {
             Cource cr = it.next();
             System.out.println("課程："+ cr.getId() + ":" + cr.getName());
         }
+
+        for(Iterator<Cource> its = courcesToSelect.iterator();its.hasNext();its.next()){
+
+        }
+
+        for(Cource c : courcesToSelect){
+
+        }
+
+        courcesToSelect.forEach(c -> {
+
+        });
+
     }
 
     /* 通過for each遍歷List (查詢/for) */
