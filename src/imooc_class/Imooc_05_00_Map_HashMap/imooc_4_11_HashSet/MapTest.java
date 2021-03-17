@@ -2,6 +2,7 @@ package imooc_class.Imooc_05_00_Map_HashMap.imooc_4_11_HashSet;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Scanner;
 import java.util.Set;
 
@@ -90,9 +91,9 @@ public class MapTest {
     /** 查詢 Map迴圈 entrySet() -> key, value  */
     public void entrySetTest() {
         // 通過 entrySet 方法，返回map的鍵值對
-        Set<Map.Entry<String, Student>> entrySet = studentMap.entrySet();
+        Set<Entry<String, Student>> entrySet = studentMap.entrySet();
         System.out.println("還剩下：");
-        for(Map.Entry<String, Student> entry : entrySet){
+        for(Entry<String, Student> entry : entrySet){
             System.out.println("key:" + entry.getKey());
             System.out.println("value:"+ entry.getValue().getName()); // entry.getValue() == Student
                                                                       // entry.getValue() 是一個類
