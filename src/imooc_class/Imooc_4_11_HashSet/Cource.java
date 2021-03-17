@@ -1,4 +1,4 @@
-package imooc_class.imooc_4_11_HashSet;
+package imooc_class.Imooc_4_11_HashSet;
 
 /* 課程類 */
 public class Cource {

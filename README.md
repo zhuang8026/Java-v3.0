@@ -32,9 +32,13 @@
 - Java 中的集合框架(中)
 - 5-01 
   - 5-01 Map & HashMap 簡介
-  - 5-02 學生選課 --- 添加 Map 學生
-  - 5-03 學生選課 --- 刪除 Map 學生 
-  - 5-04 學生選課 --- 修改 Map 學生
+  - 5-02 學生選課 --- 添加 Map 學生 put()
+  - 5-03 學生選課 --- 刪除 Map 學生 remove()
+  - 5-04 學生選課 --- 修改 Map 學生 put()
+    -  其中包含 
+       - keySet   (取得all key) 
+       - entrySet (取得all key and all value) 
+       - get      (取得object中對應key的value)
 
 - Java 中的集合框架(下)
 - 6-01
