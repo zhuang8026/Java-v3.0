@@ -1,5 +1,5 @@
 # Learn junior Java class 3
-### 學習Java的第三步, 理解萬歲，多一分也不浪費
+### 學習Java的第三步, 理解萬歲, 多一分也不浪費
 - 1-01
     - 1-01 Java 異常介紹
     - 1-02 Java中使用 try..catch..finally 實現異常處理
