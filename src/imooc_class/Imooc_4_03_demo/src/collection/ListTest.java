@@ -101,17 +101,17 @@ public class ListTest {
             System.out.println("課程："+ cr.getId() + ":" + cr.getName());
         }
 
-        for(Iterator<Cource> its = courcesToSelect.iterator();its.hasNext();its.next()){
-
-        }
-
-        for(Cource c : courcesToSelect){
-
-        }
-
-        courcesToSelect.forEach(c -> {
-
-        });
+//        for(Iterator<Cource> its = courcesToSelect.iterator();its.hasNext();its.next()){
+//
+//        }
+//
+//        for(Cource c : courcesToSelect){
+//
+//        }
+//
+//        courcesToSelect.forEach(c -> {
+//
+//        });
 
     }
 
@@ -149,6 +149,7 @@ public class ListTest {
         Cource[] cr10 = {courcesToSelect.get(2), courcesToSelect.get(3)};
         courcesToSelect.removeAll(Arrays.asList(cr10));
         System.out.println("成功刪除,index:2,3");
+
         ListForEach();
     }
 

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    1. Map<String, Object>
+        -> key 為 學生id
+        -> value 為 學生對象
+        -> public Map<String, Object> objectMap = new HashMap<String, Object>();
+
+    2. 新增 - put(key, object)
+            -> 即將新增的 key 是第幾個位置
+            -> 即將新增的 object 是內容
+       刪除 - remove(key)
+            -> 即將刪除的 key 是第幾個位置
+       修改 - put(key, object)
+            -> 即將修改的 key 是第幾個位置
+            -> 即將修改的 object 是內容
+
+    3. 如何取得所有的內容
+        --- Method 1 ---
+        取得所有的key - KeySet()
+            -> Set<String> ks = objectMap.keySet(); // 取得所有的key
+        迴圈並取出 - for + get()
+            ->  for(String id: ks) {
+                    objectMap.get(id);
+                }
+        --- Method 2 ---
+        取得所有(Key, value) - entrySet()
+            -> Set<Entry<String, Object>> es = objectMap.entrySet();
+        迴圈並取出 - for + getKey() + getValue()
+            ->  for(Entry<String, Object> esData: es) {
+                    esData.getKey(); -> 注意：這是一個key
+                    esData.getValue(); -> 注意：這是一個object, 所有還需要 xxx.name or xxx.key
+                }
+
+    4. 查看數量
+            -> objectMap.size();
+</body>
+</html>

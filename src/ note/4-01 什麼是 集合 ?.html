@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    0. 什麼是 集合 ？
+        -> 集合物件
+            -> 一群相關聯的資料，集合在一起組成一個物件
+            -> 集合物件裡的資料，稱為元素（ elements ）
+
+    1. 集合 和 數組 非常相似，但數組的長度沒辦法自動擴展，集合卻可以。
+        -> 數組長度 固定
+        -> 集合長度 可變
+
+    2. 集合框架體系結構：
+        2-1 -> Collection （interface）
+                -> List (有序)(序列) -> ArrayList(數組序列)(實現類)
+                    -> 有序容器，可以通過index知道元素的位置，它允許元素的重複
+                -> Queue（隊列）-> LinkedList(鏈表)(實現類)
+                    -> 有序容器，可以通過index知道元素的位置，它允許元素的重複
+                -> Set (無序)(集)-> HashSet(實現類)
+                    -> 無序容器，你無法保證每個元素的儲存順序
+
+        2-2 -> Map（interface）-> HashMap(實現類)
+                -> 無序容器
+                -> HashMap 是 Entry對象 是無序排列
+                -> Map內部的數據結構是 < key, Value > 來顯示和存取（Entry 鍵值對）
+                -> 使用鍵值對(key-value), 值(value)可以重複，鍵(key)不可以重複
+                -> 若新增key相同的鍵值對，後面的value會自動覆蓋前面的value，但不會報錯
+                -> HashMap, LinkedHashMap, Hashtale, TreeMap (實現類)
+
+</body>
+</html>
