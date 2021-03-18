@@ -12,7 +12,16 @@
             -> lastIndexOf(Object)  => return  物件位置 or -1
     2. Set 繼承了 Colletion
         —> 所以也擁有 contains & containsAll
-    3.
+    ---------------------------------------------------------------------
+
+    3. 在 Object 中擁有2個方法
+        -> equals(OBject obj) -> return boolean
+        -> hashCode()         -> return 1 （int）
+        *** 在調用 hashSet 的 contains 方法的時候，
+            其實就是用每一個元素 hashCode() 來返回 哈希碼，
+            當哈希碼相等的情況下，在去執行 equals()，
+            但hashCode 相等並且 equals 也相等的情況下，
+            才會認定 hashSet 包含 你想測試的 元素
     4.
     5.
 
