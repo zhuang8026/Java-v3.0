@@ -47,7 +47,7 @@
   - 6-01 學生選課 --- 判斷 List 中課程是否存在 (conatians and containsAll) 
   - 6-02 學生選課 --- 判斷 Set  中課程是否存在 (conatians and containsAll)
   - 6-03 學生選課 --- 判斷 List 中課程的位置 (indexOf and lastIndexOf)
-  - 6-04 學生選課 --- 判斷 Map  中課程是否包含指定key 和 value
+  - 6-04 學生選課 --- 判斷 Map  中課程是否包含指定key 和 value (containsKey(Object key) and containsValue(Object value))
   - 6-05 應用 Collection.sort() 實現 list 排序
   - 6-06 學生選課 --- 嘗試對學生序列排序
   - 6-07 Comparable & Comparator 介紹
