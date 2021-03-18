@@ -22,14 +22,14 @@
 
     3. 如何取得所有的內容
         --- Method 1 ---
-        取得所有的key - KeySet()
+        取得所有的key - KeySet() // 無序
             -> Set<String> ks = objectMap.keySet(); // 取得所有的key
         迴圈並取出 - for + get()
             ->  for(String id: ks) {
-                    objectMap.get(id);
+                    objectMap.get(id); // get 取得相應內容
                 }
         --- Method 2 ---
-        取得所有(Key, value) - entrySet()
+        取得所有(Key, value) - entrySet() // 無序
             -> Set<Entry<String, Object>> es = objectMap.entrySet();
         迴圈並取出 - for + getKey() + getValue()
             ->  for(Entry<String, Object> esData: es) {

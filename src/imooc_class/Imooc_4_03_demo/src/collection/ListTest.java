@@ -146,7 +146,11 @@ public class ListTest {
         System.out.println("成功刪除,index:1");
 
         // 刪除方法三，刪除多個removeAll()
-        Cource[] cr10 = {courcesToSelect.get(2), courcesToSelect.get(3)};
+        // Cource[] cr10 = {courcesToSelect.get(2), courcesToSelect.get(3)};
+        List<Cource> cr10 = new ArrayList<Cource>();
+        cr10.add(courcesToSelect.get(2));
+        cr10.add(courcesToSelect.get(3));
+
         courcesToSelect.removeAll(Arrays.asList(cr10));
         System.out.println("成功刪除,index:2,3");
 

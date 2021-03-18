@@ -1,4 +1,4 @@
-package imooc_class.Imooc_05_00_Map_HashMap.imooc_4_11_HashSet;
+package imooc_class.Imooc_5_00_Map_HashMap;
 
 import java.util.HashMap;
 import java.util.Map;

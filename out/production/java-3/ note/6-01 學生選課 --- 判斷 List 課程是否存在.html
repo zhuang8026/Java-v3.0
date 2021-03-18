@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    1. Collection
+        extends <- List
+                interface <- ArrayList
+                interface <- LinkedList
+        extends <- Set
+                interface <- HashSet
+
+    2. Map (<key, value>)
+                interface <- HashMap
+------------------------------------------------------
+    3. 新建對象 要如何與 舊的對象 比對內容是否存在？
+        ->  原始對象: public List<Cource> courcesToSelect = new ArrayList<Cource>();
+        ->  新建對象: Cource cource2 = new Cource(courcesToSelect.get(0).id, courcesToSelect.get(0).name);
+            -> courcesToSelect.contains(cource2); /* false */
+            -> 為什麼是 false？ 都已經把 courcesToSelect的資料copy到 cource2
+                -> 原因：
+                    -> 因為是不同對象，所以就算 創建一個全新的對象，他不在 courcesToSelect 序列中，自然就不會 true
+                    -> 首先要知道 List 中 contains 的原理
+                        -> 但我們在調用 List.contains() 的時候，其實就是在遍歷 List 中每一個元素(class)，然後在 調用 每一個元素 的equals(object) 方法
+                        -> 重新寫 Course 類的 equals()
+                            -> @Override
+                                -> public boolean equals(Object obj) { ... }
+
+    4. List 類別中 有一個 方法能辨別出是否有相關內容
+        -> contains() / boolean
+        -> contains() 其實就是在遍歷 lIst 中每一個元素，然後在調用每一個元素的equals方法來判斷內容是否一樣
+        -> public List<Object> courcesToSelect = new ArrayList<Object>(); // ArrayList 是實現類
+            Object obj = courcesToSelect.get(0); // 取得第一個 object
+</body>
+</html>

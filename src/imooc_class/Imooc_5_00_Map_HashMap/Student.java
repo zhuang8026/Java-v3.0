@@ -1,8 +1,9 @@
-package imooc_class.Imooc_05_00_Map_HashMap.imooc_4_11_HashSet;
+package imooc_class.Imooc_5_00_Map_HashMap;
 
 import imooc_class.Imooc_4_11_HashSet.Cource;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 
 /* 學生類 */
 public class Student {
