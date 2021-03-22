@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    1. String、StringBuilder、StringBuffer 差別
+        -> String
+            -> -1. String类是final类，也即意味着String类不能被继承，并且它的成员方法都默认为final方法
+            -> -2. ** 在Java中，被final修饰的类是不允许被继承的，并且该类中的成员方法都默认为final方法
+            -> -3. String类其实是通过char数组来保存字符串的
+            -> -4. String str1 = "hello world"  和 String str2 = new String ("hello world")的区别 ?
+                -> 雖然內容一樣，但記憶體位置不同
+                -> str1 == str2 // false
+            -> -5
+                -> String a = "hello2"; String b = "hello" + 2;
+                    -> a == b // true: "hello"+2 在编译期间就已经被优化成"hello2"
+                -> -----------------------------------------------
+                -> String a = "hello2"; String b = "hello"; String c = b+2;
+                    -> a == b // false: 由于有符号引用的存在，所以  String c = b + 2;不会在编译期间被优化，不会把b+2当做字面常量来处理的
+                -> new String("xxx").intern()
+                    -> 任意两个字符串 s 和 t，当且仅当 s.equals(t) 为 true 时，s.intern() == t.intern() 才为 true。
+                -> “String s = new String("xyz") 請問在運行時候 涉及了 幾個 String 實例？
+                    -> 两个，一个是 字符串 字面量 "xyz"所对应的、驻留（intern）在一个全局共享的字符串常量池中的实例
+                    -> 另一个是通过 new String(String) 创建并初始化的、内容与"xyz"相同的实例
+                        ** -> 看不懂？
+                            -> so easy -> 两个(一个是“xyz”,一个是指向“xyz”的引用对象s)
+    -> StringBuilder
+        -> append()
+        ->
+    -> StringBuffer
+        -> append()
+        -> 多线程访问时起到安全保护作用
+
+    2. 效能
+        -> StringBuilder > StringBuffer > String
+    3. 建議
+        -> 字符串相加操作较多的情况下，建议使用StringBuilder，如果采用了多线程，则使用StringBuffer
+
+</body>
+</html>
