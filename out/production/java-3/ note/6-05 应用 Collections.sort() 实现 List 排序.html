@@ -16,6 +16,14 @@
                     -> List<包裝類>
                     -> List<String>
                     -> List<Object>
+    3. 為什麼 String & Integer 可以直接使用 Collections.sort() 工具類方法？但 泛型是 物件 卻不行？
+        EX：
+            -> List<String> stringList = new ArrayList<String>(); // ok
+            -> List<Object> stringList = new ArrayList<Object>(); // error
+                ->  因為 String 和 Integer 本身就已經實現了 Comparable interface，但自己寫的 class 未必有使用 Comparable 接口
+                    所以 如果自己寫的類想要使用 Collections.sort()，那就要使用以下兩個方法：
+                        -> xxxx implements Comparable<Object> { ... } /* 寫在類中 */
+                        -> xxxx implements Comparator<Object> { ... } /* 寫在methods中 */
 
 </body>
 </html>

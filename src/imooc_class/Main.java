@@ -1,7 +1,6 @@
 package imooc_class;
 
-import java.util.ArrayList;
-import java.util.Set;
+import java.util.*;
 
 public class Main {
 
@@ -46,6 +45,20 @@ public class Main {
         double xxxx = Double.parseDouble(s1);
         int yyyy = Integer.parseInt(s2);
         System.out.println(xxxx + yyyy);
+
+        Integer[] data1 = {1,2,3,4};
+        int[] data2 = {1,2,3,4};
+        Integer[] intData = new Integer[]{ 1,2,3,4};
+        Arrays.stream(intData).forEach(data3 -> System.out.println(data3));
+
+//        Set<Integer> setData = new HashSet<Integer>();
+
+//        List<Integer> listData1 = new ArrayList<Integer>(intData);
+
+//        List<Integer> listData2 = new ArrayList<Integer>(new HashSet<>());
+
+//        List<Integer> listData3 = new ArrayList<Integer>(setData);
+
     }
 
 }

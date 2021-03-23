@@ -48,12 +48,14 @@
   - 6-02 學生選課 --- 判斷 Set  中課程是否存在 (conatians and containsAll)
   - 6-03 學生選課 --- 判斷 List 中課程的位置 (indexOf and lastIndexOf)
   - 6-04 學生選課 --- 判斷 Map  中課程是否包含指定key 和 value (containsKey(Object key) and containsValue(Object value))
-  - 6-05 應用 Collection.sort() 實現 list 排序
-  - 6-06 學生選課 --- 嘗試對學生序列排序
-  - 6-07 Comparable接口 & Comparator接口 介紹: collection.sort() 實現 list 排序 解決辦法
-  - 6-08 學生選課 --- 實現學生序列排序
-    - Comparable -> compareTo(Object o1){...}
-    - Comparator -> compare(Object o1, Object o2){...}
+  - 6-05 應用 Collection.sort() 實現 List 排序
+    - 6-06 學生選課 --- 嘗試對學生序列排序
+    - 6-07 Comparable接口 & Comparator接口 介紹: collection.sort() 實現 list 排序 解決辦法
+    - 6-08 學生選課 --- 實現學生序列排序
+      - Comparable -> compareTo(Object o1){...}
+        - ⬆ 基本上都會寫在 類(class) 中
+      - Comparator -> compare(Object o1, Object o2){...}
+        - ⬆ 如果 無法改變 類 或者 想直接對 List 序列進行比對
 - 7-01
   - 7-01 簡易庫克牌遊戲 - 練習
   

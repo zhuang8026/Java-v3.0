@@ -72,23 +72,24 @@ public class CollectionsTest {
         Set<Integer> setData = new HashSet<Integer>();
 //        List<Integer> listData = new ArrayList<Integer>();
 
+        // 3個數字不重複
         int s;
         while(setData.size() < 3) {
             s = random.nextInt(100);
             setData.add(s);
         }
-        List<Integer> listData = new ArrayList<>(setData);
+        List<Integer> listData = new ArrayList<Integer>(setData);
 
-        System.out.println("listData-Array:" + listData);
-        System.out.println("listData:" + setData.stream().collect(Collectors.toList()).get(0));
+//        System.out.println("listData-Array:" + listData);
+//        System.out.println("listData:" + setData.stream().collect(Collectors.toList()).get(0));
 
         Student st1 = new Student();
-//        st1.setId(Integer.toString(random.nextInt(3)));
+//      st1.setId(Integer.toString(random.nextInt(3)));
+//      st1.setId(random.nextInt(3) + "");
         st1.setId(listData.get(0).toString());
         st1.setName("william");
 
         Student st2 = new Student();
-//        st2.setId(random.nextInt(3) + "");
         st2.setId(listData.get(1).toString());
         st2.setName("margarita");
 
@@ -108,7 +109,7 @@ public class CollectionsTest {
          * 所以需要對 Student 類 來進行實現 Comparable 接口
          * */
         /* Comparable<> */
-        Collections.sort(studentList);
+        Collections.sort(studentList); // Comparable 是寫在 Student 類裡面，目前是設定排序 id 
 
         System.out.println("-------- 排序後:Comparable --------");
         for(Student stData: studentList){
