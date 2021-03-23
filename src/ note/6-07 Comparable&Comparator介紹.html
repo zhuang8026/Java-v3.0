@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    1. 在Java中，如果兩個對象想要進行排序，物件與物件之間必須是可以比較的，那就要使用 Comparable 接口來表示某個對象可以進行比較
+    Comparable 就像是 給對象默認來比較規則
+    2.  排序接口分類
+        Comparable ---> 默認排序規則
+        Comparator ---> 臨時排序規則
+
+    3.  Comparable接口 -- 可比較的
+            -> 實現該接口表示：這個類的實例可以比較大小，可以進行自然排序，自然排序 可以理解為 默認的比較規則
+            -> 需使用 compareTo() 方法
+                -> A compareTo() B
+                    => 返回 正數 == A 比 B 大
+                    => 返回 負數 == A 比 B 小
+                    => 返回 0   == A 等於 B
+
+    4. Comparator 接口 --- 比較工具
+            -> 用於定義 臨時 比較規則，而不是 默認比較規則
+            -> 需使用 compare() 方法
+            ->
+            ->
+            ->
+
+    3. 4. -1. 何時使用 Comparable 和 Comparator ？
+        -> 如果能修改 物件類，那就使用 Comparable
+        -> 如果無法修改或得知 List 序列類，那麼就是用 Comparator
+
+    5. Comparator 和 Comparable 都是 Java 集合框架的成員
+        -> 集合框架 有那些？（複習）
+            -> Collection 接口
+            -> Collections 工具類
+            -> Map 接口
+            -> Comparator 接口
+            -> Comparable 接口
+            ->
+
+
+</body>
+</html>

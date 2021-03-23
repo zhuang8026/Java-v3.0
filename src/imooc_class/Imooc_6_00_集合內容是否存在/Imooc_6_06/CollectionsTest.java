@@ -1,4 +1,4 @@
-package imooc_class.Imooc_6_00_集合內容是否存在.Imooc_6_05_Collections;
+package imooc_class.Imooc_6_00_集合內容是否存在.Imooc_6_06;
 
 import java.util.*;
 
@@ -60,6 +60,28 @@ public class CollectionsTest {
         }
     }
 
+    /**
+     * 3. 對其他類型泛型的List進行排序
+     *
+     */
+    public void testSort3() {
+        List<Student> studentList = new ArrayList<Student>();
+        Student st1 = new Student();
+        st1.setId("1");
+        st1.setName("william");
+        Student st2 = new Student();
+        st2.setId("2");
+        st2.setName("margarita");
+        Student[] students = {st1, st2};
+        studentList.addAll(Arrays.asList(students));
+        System.out.println("-------- 排序前 --------");
+        for(Student stData: studentList){
+            System.out.println("學生名字："+stData.getName());
+        }
+
+//        Collections.sort(studentList); // 由於 studentList 沒有使用 Comparable 接口，所以會抱錯
+
+    }
 
     public static void main(String[] args) {
         CollectionsTest ct = new CollectionsTest();

@@ -50,9 +50,10 @@
   - 6-04 學生選課 --- 判斷 Map  中課程是否包含指定key 和 value (containsKey(Object key) and containsValue(Object value))
   - 6-05 應用 Collection.sort() 實現 list 排序
   - 6-06 學生選課 --- 嘗試對學生序列排序
-  - 6-07 Comparable & Comparator 介紹
+  - 6-07 Comparable接口 & Comparator接口 介紹: collection.sort() 實現 list 排序 解決辦法
   - 6-08 學生選課 --- 實現學生序列排序
-
+    - Comparable -> compareTo(Object o1){...}
+    - Comparator -> compare(Object o1, Object o2){...}
 - 7-01
   - 7-01 簡易庫克牌遊戲 - 練習
   

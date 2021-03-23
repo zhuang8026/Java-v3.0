@@ -26,7 +26,10 @@
                     -> 另一个是通过 new String(String) 创建并初始化的、内容与"xyz"相同的实例
                         ** -> 看不懂？
                             -> so easy -> 两个(一个是“xyz”,一个是指向“xyz”的引用对象s)
-    -> StringBuilder
+            -> String 想要字串相加，只能：
+                -> String a = "1"; String b = "2";
+                    ->  String c = a + b; /* 需要一直写出新的 String 物件 */
+    -> StringBuilder (推薦使用)
         -> append()
         ->
     -> StringBuffer
