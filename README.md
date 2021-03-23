@@ -20,7 +20,7 @@
     - 3-06 Date 和 SimpleDateFormat 類來顯示時間
     - 3-07 Calendar 和 LocalDateTime 類應用 
     - 3-08 Math 引用
-### Java 中的集合框架(上)
+#### Java 中的集合框架(上)
 - 4-01
   - 4-01 什麼是 集合？(Collection & Map)
     - 4-01-01 什麼是無序？
@@ -31,7 +31,7 @@
   - 4-09 學生選課 --- 應用泛型管理課程(一)
     - 4-10 學生選課 --- 應用泛型管理課程(二)
   - 4-11 學生選課 --- 通過 Set 集合管理課程
-### Java 中的集合框架(中)
+#### Java 中的集合框架(中)
 - 5-01 
   - 5-01 Map & HashMap 簡介
   - 5-02 學生選課 --- 添加 Map 學生 put()
@@ -42,15 +42,17 @@
        - entrySet (取得all key and all value) 
        - get      (取得object中對應key的value)
 
-### Java 中的集合框架(下)
+#### Java 中的集合框架(下)
+- #### contains methods (List 判斷內容是否相同對象)
 - 6-01
   - 6-01 學生選課 --- 判斷 List 中課程是否存在 (conatians and containsAll) 
   - 6-02 學生選課 --- 判斷 Set  中課程是否存在 (conatians and containsAll)
   - 6-03 學生選課 --- 判斷 List 中課程的位置 (indexOf and lastIndexOf)
   - 6-04 學生選課 --- 判斷 Map  中課程是否包含指定key 和 value (containsKey(Object key) and containsValue(Object value))
-  - 6-05 應用 Collection.sort() 實現 List 排序
+- #### Collections(集合) 工具類
+  - 6-05 應用 Collections.sort() 實現 List 排序
     - 6-06 學生選課 --- 嘗試對學生序列排序
-    - 6-07 Comparable接口 & Comparator接口 介紹: collection.sort() 實現 list 排序 解決辦法
+    - 6-07 Comparable接口 & Comparator接口 介紹: Collections.sort() 實現 list 排序 解決辦法
     - 6-08 學生選課 --- 實現學生序列排序
       - Comparable -> compareTo(Object o1){...}
         - ⬆ 基本上都會寫在 類(class) 中
