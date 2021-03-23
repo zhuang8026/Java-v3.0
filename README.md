@@ -23,6 +23,7 @@
 - #### Java 中的集合框架(上)
 - 4-01
   - 4-01 什麼是 集合？(Collection & Map)
+    - ##### Collection 是 interface
     - 4-01-01 什麼是無序？
   - 4-02 Collection 是 List 的父親
   - 4-03 練習
@@ -49,7 +50,7 @@
   - 6-02 學生選課 --- 判斷 Set  中課程是否存在 (conatians and containsAll)
   - 6-03 學生選課 --- 判斷 List 中課程的位置 (indexOf and lastIndexOf)
   - 6-04 學生選課 --- 判斷 Map  中課程是否包含指定key 和 value (containsKey(Object key) and containsValue(Object value))
-- #### Collections(集合) 工具類
+- #### Collections(集合) 靜態工具類
   - 6-05 應用 Collections.sort() 實現 List 排序
     - 6-06 學生選課 --- 嘗試對學生序列排序
     - 6-07 Comparable接口 & Comparator接口 介紹: Collections.sort() 實現 list 排序 解決辦法
