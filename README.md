@@ -2,7 +2,7 @@
 ### 學習Java的第三步, 理解萬歲, 多一分也不浪費
 - 1-01
     - [x] 1-01 Java 異常介紹
-    - [ ] 1-02 Java中使用 try..catch..finally 實現異常處理
+    - [&#9745;] 1-02 Java中使用 try..catch..finally 實現異常處理
       - [ ] 1-03 Java try..catch..finally 練習
     - [ ] 1-05 Java 中的異常拋出以及自定義異常
     - [ ] 1-07 Java 中的異常鏈
