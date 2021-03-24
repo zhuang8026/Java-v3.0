@@ -39,7 +39,7 @@ public class Main {
 //        int ww,rr;
 //        System.out.println(q/100);
 //        System.out.println(q%10);
-        System.out.println(">>:" + (35 >> 2));
+        System.out.println(">>:" + (35 >> 2)); // 8
         String s1 = "0.5";
         String s2 = "12";
         double xxxx = Double.parseDouble(s1);
@@ -48,16 +48,20 @@ public class Main {
 
         Integer[] data1 = {1,2,3,4};
         int[] data2 = {1,2,3,4};
-        Integer[] intData = new Integer[]{ 1,2,3,4};
+        Integer[] intData = new Integer[]{ 1,2,3,4 };
+        intData[1] = 999;
+//        System.out.println("intData:" + );
+//        Arrays.stream(intData).map(sss -> sss.name);
         Arrays.stream(intData).forEach(data3 -> System.out.println(data3));
 
-//        Set<Integer> setData = new HashSet<Integer>();
+        Set<Integer> setData = new HashSet<Integer>();
 
-//        List<Integer> listData1 = new ArrayList<Integer>(intData);
+        List<Integer> listData1 = Arrays.asList(1,2,3);
+        System.out.println(listData1);
 
-//        List<Integer> listData2 = new ArrayList<Integer>(new HashSet<>());
+        List<Integer> listData2 = new ArrayList<Integer>(new HashSet<>());
 
-//        List<Integer> listData3 = new ArrayList<Integer>(setData);
+        List<Integer> listData3 = new ArrayList<Integer>(setData);
 
     }
 
