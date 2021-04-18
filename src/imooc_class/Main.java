@@ -3,12 +3,25 @@ package imooc_class;
 import java.util.*;
 
 public class Main {
+    private int ssss = 0;
+    public int getSsss() {
+        return ssss;
+    }
+    public void setSsss(int ssss) {
+        this.ssss = ssss;
+    }
+
+    int a = 0;
+    int b = 1;
+    int c = a + b;
 
     public void test (){
+
         ArrayList<Integer> list = new ArrayList<Integer>();
         for (int i = 0; i < 10; i++ ){
             list.add(i);
         }
+
         System.out.println(list);
     }
 
@@ -63,6 +76,42 @@ public class Main {
 
         List<Integer> listData3 = new ArrayList<Integer>(setData);
 
+        System.out.println(Integer.valueOf("111111"));
+        System.out.println(Integer.parseInt("222222222"));
+
+        double wsx = 2.345657;
+        int qaz = (int) wsx;
+        System.out.println(qaz);
+
+        String[] qee = new String[5];
+        qee[0] = "qqqqq";
+        qee[1] = "sssss";
+        qee[2] = "ttttt";
+        qee[3] = "ggggg";
+
+        for (String qees : qee) {
+            System.out.println(qees.equals("ggggg"));
+        }
     }
 
 }
+
+// game server
+class Member {
+    // OLTP - db
+    volatile Integer money = 0;
+
+    public void add(int num) {
+        synchronized(money){
+            this.money += num;
+        }
+    }
+
+    public void minus(int num) {
+        synchronized(money){
+            this.money -= num;
+        }
+    }
+
+}
+
