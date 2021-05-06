@@ -5,7 +5,9 @@ import java.util.*;
 public class SetTest {
 
     public List<Cource> courcesToSelect = new ArrayList<Cource>();
-    public Set<String> set = new LinkedHashSet<>();
+    public Set<String> LinkSet = new LinkedHashSet<String>();
+    public Set<Integer> LinkSetV2 = new LinkedHashSet<Integer>();
+    public List<Integer> listv1 = new ArrayList<Integer>();
 
     public void ListAdd(){
         Cource cr1 = new Cource();
@@ -26,6 +28,18 @@ public class SetTest {
         for(Cource crs: courcesToSelect){
             System.out.println("課程：" + crs);
         }
+    }
+
+    // 測試 ArrayList 是否有序
+    public void LinkedHashSeHandle() {
+        // Adding elements
+        listv1.add(99);
+        listv1.add(7);
+        listv1.add(0);
+        listv1.add(67);
+        listv1.add(89);
+        listv1.add(66);
+        System.out.println("listv1:" + listv1);
     }
 
     public void TestForEachForSet(Student student){
@@ -66,5 +80,8 @@ public class SetTest {
         }
 
         st.TestForEachForSet(student);
+
+        System.out.println("------------<>------------");
+        st.LinkedHashSeHandle();
     }
 }

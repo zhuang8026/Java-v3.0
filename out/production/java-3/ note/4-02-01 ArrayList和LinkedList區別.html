@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    1. Collection (interface)(收藏,收集)
+        -> 是List、Set、Queue 接口的父接口
+        -> 定義了 可以操作 List、Set、Queue 方法 -> 可新增 查詢 修改 刪除
+        -> java Collection API
+            -> https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html
+
+    2. List接口 及其 實現類 ----- ArrayList and LinkedList
+        -> List 是元素有序並且可以重複的集合，被稱為 序列
+        -> List 可以精確的控制每個元素的插入位置 或 刪除指定元素
+        -> ArrayList 是 數組序列，是List 的 重要實現列
+        -> ArrayLsit 底層是由數組實現的
+
+    -------- ArrayList && LinkedList 區別 --------
+    3.  ArrayList 是基於 動態陣列 的資料結構，LinkedList 是基於 雙向連結串列 的資料結構
+    4.  对于随机访问 get(int index) 和 set(int index,E element) ，ArrayList要优于LinkedList，因为LinkedList要移动指针
+    5.  对于添加和删除操作 add(int index) 和 remove(int index) ，一般大家都会说LinkedList要比ArrayList快，因为ArrayList要移动数据
+    6.  当数据量大的时候，如果只需要在靠前的部分插入或删除数据，那也可以选用LinkedList，反之选择ArrayList反而效率更高
+    7.  總結：
+            使用區別： ArrayList 和 LinkedList 使用上沒有區別，只在效能上有區別，一般只會使用 ArrayList
+                        查找 -> get(int index)
+                        修改 -> set(int index, E element)
+                        新增 -> add(object 、 array 、 boolean 、 string 、 int)
+                                -> ex1: add("william"); // 默認
+                                -> ex2: add(2, "william"); // 指定位置
+                        刪除 -> remove(int index)
+    8.
+
+
+</body>
+</html>

@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-    1. Set(interface)接口及其實現類 --> HashSet
+    1. Set(interface)接口及其實現類 --> HashSet --> 無順序，元素唯一不重複
         -> Set 是元素無序並且不可以重複的集合，被稱為 集
         -> HashSet 稱為 哈希集，是Set的一個重要的實現類
 
@@ -24,11 +24,38 @@
                     -> 所以 Set 是 interface
         -> HashSet() 是 Set 接口的 實現類
 
-    public Set<Cource> courses = new HashSet<Cource>();  // 無順序, 資料不可重複，由 HashMap 實作, 陣列及bucket
-    public Set<String> set1     = new LinkedHashSet<>(); // 有順序, 資料不可重複，由 LinkedHashMap 實作鏈接
-    public List<String> list1  = new LinkedList<>();     // 有順序, 資料可重複（鏈接）
-    public List<String> list2  = new ArrayList<>();      // 有順序, 資料可重複（陣列）
+    public Set<Cource> courses = new HashSet<Cource>();  // 無順序, 資料 不 可重複，由 HashMap 實作, 陣列及bucket
+    public Set<String> set1    = new LinkedHashSet<>();  // 保留插入顺序, 資料 不 可重複，由 LinkedHashMap 實作
+    public List<String> list1  = new LinkedList<>();     // 保留插入顺序, 資料 可 重複（鏈接）
+    public List<String> list2  = new ArrayList<>();      // 保留插入顺序, 資料 可 重複（陣列）
 
 
+    ----- Set && HashSet && LinkedHashSet -----
+    1. Set
+        -> 無順序 并且 不可以 重复的集合， 被称为集
+        ->
+    1. HashSet
+        -> HashSet是Set的一个重要实现类，称为哈希集
+        -> 無順序 并且 不可以 重复的集合
+        -> HashSet中只允许一个null元素
+            ->  set.add("William"); // ok
+            ->  set.add("William"); // error 內容不能重複
+        -> Set 需要用到 Iterator (迭代器）
+            -> hasNext() => 方法检测集合中是否还有下一个元素 (boolean)
+            -> next()    => 方法返回集合中的下一个元素 (Element)
+                -> ex:
+                    Set set = new HashSet();
+                    Iterator it = set.iterator();
+                    while( it.hasNext() ){  //遍历迭代器并输出元素
+                        System.out.print(it.next()+ " ");
+                    }
+    1. LinkedHashSet
+        -> 有順序 并且 不可以 重复的集合，由 LinkedHashMap 實作
+        ->
+        ->
+
+    什麼叫 有序 和 無序 ?
+        -> 有序、无序是指在进行插入操作时，插入位置的顺序性
+        -> 先插的位置在前，后插的位置在后，则为有序，反之无序
 </body>
 </html>

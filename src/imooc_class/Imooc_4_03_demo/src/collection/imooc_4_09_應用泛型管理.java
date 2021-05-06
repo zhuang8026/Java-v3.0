@@ -8,7 +8,7 @@ public class imooc_4_09_應用泛型管理 {
     /**
      * 帶有泛型 -> Course 的List屬性
      */
-    public List<Cource> courses = new ArrayList<>();
+    public List<Cource> courses = new ArrayList<Cource>();
 
 //    public imooc_4_09_應用泛型管理() {
 //        this.courses = new ArrayList<>();
@@ -55,6 +55,8 @@ public class imooc_4_09_應用泛型管理 {
         i04.testChild();
         i04.TestForEach();
         i04.basicType();
+        System.out.println("------------");
+        System.out.println(i04.courses);
     }
 
 }

@@ -49,7 +49,7 @@ public class MapTest {
 
     /** 取得所有的key KeySet() -> key */
     public void keySetTest() {
-        // 通過keySet,返回Map中的所有 key 的Set集合
+        // 通過 keySet,返回Map中的所有 key 的Set集合
         Set<String> ks = studentMap.keySet(); // 取得所有的key
 
         // 取得 Map 的size
