@@ -92,9 +92,9 @@ public class MapTest {
     /** 查詢 Map迴圈 entrySet() -> key, value  */
     public void entrySetTest() {
         // 通過 entrySet 方法，返回map的鍵值對
-        Set<Entry<String, Student>> entrySet = studentMap.entrySet();
+//        Set<Entry<String, Student>> entrySet = studentMap.entrySet();
         System.out.println("還剩下：");
-        for(Entry<String, Student> entry : entrySet){
+        for(Entry<String, Student> entry : studentMap.entrySet()){
             System.out.println("key:" + entry.getKey());
             System.out.println("value:"+ entry.getValue().getName()); // entry.getValue() == Student
                                                                       // entry.getValue() 是一個類
